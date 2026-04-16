@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "./ui/Button";
-import Magnetic from "./ui/Magnetic";
+import { Button } from "@/components/ui/Button";
+import Magnetic from "@/components/ui/Magnetic";
 
 
 export default function Hero() {

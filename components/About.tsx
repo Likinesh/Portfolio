@@ -1,8 +1,8 @@
 "use client";
 
 import { personalInfo, skillGroups, achievements } from "@/lib/data";
-import { Badge } from "./ui/Badge";
-import { Button } from "./ui/Button";
+import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { motion, Variants } from "framer-motion";
 import { Code2, Cpu, Database, Cloud } from "lucide-react";
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { projects } from "@/lib/data";
-import { Badge } from "./ui/Badge";
+import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
