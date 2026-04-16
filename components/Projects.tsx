@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { projects } from "@/lib/data";
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "./ui/Badge";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
@@ -38,7 +38,7 @@ export default function Projects({ showAll = false }: ProjectsProps) {
 
   return (
     <div id="projects" className="py-10 sm:py-16 relative">
-      <motion.div 
+      <motion.div
         className="section-container relative z-10"
         initial="hidden"
         whileInView="visible"
@@ -62,8 +62,8 @@ export default function Projects({ showAll = false }: ProjectsProps) {
 
         <div className="flex flex-col gap-10 sm:gap-16">
           {displayProjects.map((project, i) => (
-            <motion.div 
-              key={project.id} 
+            <motion.div
+              key={project.id}
               className="relative group"
               variants={itemVariants}
             >
@@ -74,12 +74,12 @@ export default function Projects({ showAll = false }: ProjectsProps) {
                 {/* Visual Placeholder / Branding Area */}
                 <div className="w-full md:w-[45%] h-[200px] sm:h-[300px] rounded-2xl bg-[rgba(0,0,0,0.5)] border border-[rgba(255,255,255,0.05)] relative overflow-hidden flex items-center justify-center group/img shrink-0">
                   <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiMzMzMiLz48L3N2Zz4=')] opacity-20" />
-                  
+
                   {project.image ? (
                     <div className="relative w-full h-full overflow-hidden">
-                      <Image 
-                        src={project.image} 
-                        alt={project.title} 
+                      <Image
+                        src={project.image}
+                        alt={project.title}
                         fill
                         className="object-cover opacity-70 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-700 ease-out z-10"
                       />
@@ -153,7 +153,7 @@ export default function Projects({ showAll = false }: ProjectsProps) {
         </div>
 
         {!showAll && projects.length > 3 && (
-          <motion.div 
+          <motion.div
             className="mt-16 sm:mt-20 flex justify-center relative z-10 pb-8"
             variants={itemVariants}
           >

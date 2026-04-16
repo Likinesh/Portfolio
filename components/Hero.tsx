@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/Button";
-import Magnetic from "@/components/ui/Magnetic";
+import { Button } from "./ui/Button";
+import Magnetic from "./ui/Magnetic";
 
 
 export default function Hero() {
@@ -25,8 +25,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-accent rounded-full blur-[120px] opacity-10 animate-pulse-glow" />
       </div>
 
-      <div className="section-container relative z-10 flex flex-col items-center text-center w-full pt-10">
-        
+      <div className="section-container relative z-10 flex flex-col items-center text-center w-full pt-24 sm:pt-32">
+
         {/* Availability Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.1)] mb-8 sm:mb-12 animate-fade-up delay-1 backdrop-blur-md">
           <span className="relative flex h-2 w-2">
@@ -56,7 +56,7 @@ export default function Hero() {
               <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
             </Button>
           </Magnetic>
-          
+
           <Magnetic intensity={0.2}>
             <Button variant="outline" href="/klk-resume.pdf" download className="group relative overflow-hidden bg-[rgba(255,255,255,0.02)] text-text font-heading font-medium text-sm sm:text-base tracking-wide px-8 py-4 sm:py-5 rounded-xl border border-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.05)] hover:text-white-custom hover:border-[rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
               Download Resume

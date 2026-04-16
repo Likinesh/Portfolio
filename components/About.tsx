@@ -1,8 +1,8 @@
 "use client";
 
 import { personalInfo, skillGroups, achievements } from "@/lib/data";
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
+import { Badge } from "./ui/Badge";
+import { Button } from "./ui/Button";
 import { motion, Variants } from "framer-motion";
 import { Code2, Cpu, Database, Cloud } from "lucide-react";
 
@@ -38,7 +38,7 @@ const itemVariants: Variants = {
 export default function About() {
   return (
     <div id="about" className="py-12 sm:py-16 relative">
-      <motion.div 
+      <motion.div
         className="section-container relative z-10"
         initial="hidden"
         whileInView="visible"
@@ -54,7 +54,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-[auto_auto] gap-6 sm:gap-8">
 
           {/* Main Bio Card (Span 2 cols) */}
-          <motion.div 
+          <motion.div
             className="glass-card rounded-3xl p-8 sm:p-10 md:col-span-2 group"
             variants={itemVariants}
           >
@@ -83,7 +83,7 @@ export default function About() {
           </motion.div>
 
           {/* Core Tech Stack (Span 1 col, 2 rows) */}
-          <motion.div 
+          <motion.div
             className="glass-card rounded-3xl p-8 sm:p-10 md:row-span-2 flex flex-col justify-between group overflow-hidden relative"
             variants={itemVariants}
           >
@@ -114,7 +114,7 @@ export default function About() {
           </motion.div>
 
           {/* Achievement Highlight Card */}
-          <motion.div 
+          <motion.div
             className="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between overflow-hidden relative group"
             variants={itemVariants}
           >
@@ -142,20 +142,20 @@ export default function About() {
               </div>
             </div>
             <div className="relative z-10 mt-6">
-               <Button variant="link" href={personalInfo.leetcode} target="_blank" className="p-0 text-accent font-mono text-xs uppercase tracking-widest flex items-center gap-2 group/btn">
-                  View LeetCode <span className="group-hover:translate-x-1 transition-transform">→</span>
-               </Button>
+              <Button variant="link" href={personalInfo.leetcode} target="_blank" className="p-0 text-accent font-mono text-xs uppercase tracking-widest flex items-center gap-2 group/btn">
+                View LeetCode <span className="group-hover:translate-x-1 transition-transform">→</span>
+              </Button>
             </div>
           </motion.div>
 
           {/* Competition Card */}
-          <motion.div 
+          <motion.div
             className="glass-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between group"
             variants={itemVariants}
           >
             <div>
               <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-6">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="7" /><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" /></svg>
               </div>
               <h2 className="font-heading font-bold text-xl text-white-custom mb-2">IIT BHU Finalist</h2>
               <p className="text-xs text-muted-custom leading-relaxed">
