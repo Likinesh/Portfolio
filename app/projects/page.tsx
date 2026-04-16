@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
 import Link from "next/link";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/Button";
 
 export const metadata = {
   title: "All Projects — Likith Krishnasai",

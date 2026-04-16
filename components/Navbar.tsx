@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/Button";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
-import Magnetic from "@/components/ui/Magnetic";
+import Magnetic from "@/components/Magnetic";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
