@@ -19,7 +19,7 @@ export interface Experience {
 }
 
 export interface SkillGroup {
-  icon: string;
+  iconName: string;
   title: string;
   skills: string[];
 }
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     title: "Eventra",
     subtitle: "AI-Powered Event Management",
     description:
-      "A smart event management platform with AI-powered event creation via Gemini API, real-time data sync using Convex, Clerk authentication, and Unsplash integration for dynamic event imagery. Built with Next.js.",
+      "I built Eventra to bridge the gap between creative planning and technical execution. It's a platform that uses the Gemini API to intelligently generate event themes, paired with Convex for real-time data synchronization. It's where seamless organization meets automated creativity.",
     tech: ["Next.js", "JavaScript", "Convex", "Clerk", "Gemini API", "Tailwind CSS"],
     github: "https://github.com/Likinesh/Eventra",
     live: "https://eventra-peach.vercel.app/",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     title: "HealNow",
     subtitle: "Tele-Health Platform",
     description:
-      "Full-stack platform enabling patients to book and attend real-time video consultations with doctors. Features role-based auth, Vonage API for video, and Prisma ORM optimizations that reduced response time by 35%.",
+      "A project born from the need for more accessible healthcare. I developed a full-stack space where patients and doctors can connect via real-time video. Beyond the interface, I spent significant time optimizing the database with Prisma, managing to cut down response times by nearly 35% for a snappier experience.",
     tech: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Vonage API", "Vercel"],
     github: "https://github.com/Likinesh",
     live: "https://heal-now-next.vercel.app",
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     title: "Craft-Vault",
     subtitle: "P2P Marketplace Mobile App",
     description:
-      "Cross-platform mobile marketplace connecting artisan buyers and sellers with sub-second real-time sync. Supports 50+ concurrent transactions with Firebase Firestore, validated forms via Formik, and in-app secure messaging.",
+      "I wanted to see how far I could push real-time interactions on mobile. Craft-Vault is a React Native app that connects artisans with a global audience. It handles sub-second syncs for over 50 concurrent transactions, proving that even small-scale marketplaces can feel incredibly robust and reactive.",
     tech: ["React Native", "Expo", "Firebase", "Tailwind CSS", "Formik"],
     github: "https://github.com/Likinesh",
   },
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     title: "AI CLI",
     subtitle: "AI-Powered Command Line Tool",
     description:
-      "An intelligent command-line interface that leverages AI to assist developers with code generation, debugging, and workflow automation. Features a client-server architecture with a TypeScript backend and interactive frontend.",
+      "As a developer, I'm always looking for ways to stay in the flow. I built this CLI to bring AI right into the terminal—helping with anything from debugging cryptic errors to automating repetitive boilerplate. It's essentially a local assistant that understands your codebase as you write it.",
     tech: ["TypeScript", "Node.js", "JavaScript", "CSS"],
     github: "https://github.com/Likinesh/AI_CLI",
   },
@@ -97,25 +97,16 @@ export const projects: Project[] = [
     title: "WebAnalysis",
     subtitle: "Website Analytics Dashboard",
     description:
-      "A self-hosted web analytics platform that tracks visitor data including geolocation, device/browser info, UTM sources, and session duration. Displays insights via interactive graphs with Drizzle ORM and Next.js.",
+      "Privacy-first analytics is something I care about. This dashboard allows for self-hosted tracking of visitor behavior without relying on big-tech trackers. It gives you raw insights—from session duration to device types—presented through clean, interactive visualizations built with Drizzle and Next.js.",
     tech: ["Next.js", "TypeScript", "Drizzle ORM", "Tailwind CSS", "PostgreSQL"],
     github: "https://github.com/Likinesh/WebAnalysis",
   },
-  // {
-  //   id: 5,
-  //   title: "Hungry Cheetahs",
-  //   subtitle: "Food Ordering Web App",
-  //   description:
-  //     "A full-stack food ordering platform built with Node.js and Express. Features dynamic EJS-based views, route-based navigation, user-friendly menu browsing, and a streamlined ordering workflow for restaurants.",
-  //   tech: ["Node.js", "Express", "EJS", "JavaScript", "CSS", "MongoDB"],
-  //   github: "https://github.com/Likinesh/HUNGRY-CHEETAHS",
-  // },
   {
     id: 6,
     title: "MyRestro POS",
     subtitle: "Restaurant Point-of-Sale System",
     description:
-      "A modern point-of-sale system designed for restaurants, featuring real-time order management, menu customization, and billing workflows. Built with a clean client-server architecture and MIT licensed.",
+      "What started as a tool for local businesses evolved into a full POS system. I focused on making the order management and billing workflows as intuitive as possible for high-pressure restaurant environments. It teaches the importance of UI simplicity in mission-critical software.",
     tech: ["JavaScript", "Node.js", "Express", "React", "MongoDB"],
     github: "https://github.com/Likinesh/MyRestro-POS",
   },
@@ -129,9 +120,9 @@ export const experiences: Experience[] = [
     role: "Associate Software",
     roleAccent: "Development Engineer Intern",
     bullets: [
-      "Architected a <strong>global telemetry & logging solution</strong> using Azure Application Insights for high-availability systems, collaborating across QA teams.",
-      "Built a <strong>real-time flight tracking map</strong> with React, Mapbox, and WebSockets — handling 100+ concurrent flights; containerized services on Azure.",
-      "Automated <strong>end-to-end testing</strong> pipelines using Playwright & JavaScript, improving release confidence across the team.",
+      "I took ownership of a <strong>global telemetry solution</strong>, integrating Azure Application Insights into high-availability systems to provide deeper visibility into operational Health.",
+      "Collaborated on a <strong>real-time flight tracking</strong> experience using React and Mapbox, successfully handling continuous data streams for 100+ flights simultaneously.",
+      "Strengthened our deployment lifecycle by building <strong>automated end-to-end test suites</strong> with Playwright, significantly reducing manual QA cycles.",
     ],
   },
   {
@@ -141,30 +132,30 @@ export const experiences: Experience[] = [
     role: "Web",
     roleAccent: "Lead & Mentor",
     bullets: [
-      "Developed and maintained the <strong>club website</strong> end-to-end.",
-      "Mentored <strong>20+ juniors</strong> in web development and collaborative development practices using Git workflows.",
+      "I led the redesign and development of our <strong>community platform</strong>, focusing on creating an accessible home for our environmental initiatives.",
+      "Mentored a cohort of <strong>20+ junior developers</strong>, fostering a culture of peer reviews and clean code through standard Git workflows and open-source contributions.",
     ],
   },
 ];
 
 export const skillGroups: SkillGroup[] = [
   {
-    icon: "{ }",
+    iconName: "Code2",
     title: "Languages",
     skills: ["C++", "Python", "JavaScript", "TypeScript", "Java"],
   },
   {
-    icon: "⬡",
+    iconName: "Cpu",
     title: "Frameworks",
     skills: ["React.js", "Next.js", "React Native", "Node.js", "Django"],
   },
   {
-    icon: "⬢",
+    iconName: "Database",
     title: "Databases",
     skills: ["PostgreSQL", "MongoDB", "Firebase", "Redis", "MySQL", "Neon"],
   },
   {
-    icon: "☁",
+    iconName: "Cloud",
     title: "Cloud & Tools",
     skills: ["Azure", "Docker", "Git", "Mapbox", "WebSockets", "Playwright", "Postman"],
   },
@@ -195,16 +186,16 @@ export const achievements: Achievement[] = [
   {
     icon: "🏅",
     title: "LeetCode Knight",
-    description: "Rating 1863 — top competitive programmers tier on LeetCode platform.",
+    description: "Achieved a rating of 1863, placing me in the top tier of competitive programmers globally on the platform.",
   },
   {
     icon: "⚡",
     title: "Rank 946 Globally",
-    description: "LeetCode Biweekly Contest 143 — top ranking among thousands of participants.",
+    description: "Secured a top-1000 finish in LeetCode Biweekly Contest 143 out of tens of thousands of participants worldwide.",
   },
   {
     icon: "🎯",
     title: "IIT BHU Finalist",
-    description: "Reached the final round of Techalytics '25 at IIT BHU.",
+    description: "Selected as a finalist for Techalytics '25 at IIT BHU, demonstrating excellence in data-driven problem solving.",
   },
 ];

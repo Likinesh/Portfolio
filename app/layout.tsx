@@ -23,9 +23,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Likith Krishnasai — Developer",
+  title: "Likith Krishnasai | Developer & Architect",
   description:
-    "Full-Stack Developer & CS Engineer from MNNIT Allahabad. I build fast, scalable web & mobile products.",
+    "Full-Stack Developer & CS Undergrad at MNNIT Allahabad specializing in scalable web infrastructure and cross-platform mobile apps.",
+  openGraph: {
+    title: "Likith Krishnasai | Developer & Architect",
+    description: "CS Undergrad at MNNIT Allahabad. building scalable web & mobile products.",
+    type: "website",
+    locale: "en_US",
+    url: "https://likinesh.vercel.app/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Likith Krishnasai | Developer & Architect",
+    description: "CS Undergrad at MNNIT Allahabad. building scalable web & mobile products.",
+  },
 };
 
 export default function RootLayout({

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
+import Magnetic from "@/components/ui/Magnetic";
 
 
 export default function Hero() {
@@ -44,20 +45,24 @@ export default function Hero() {
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-muted-custom max-w-[600px] leading-relaxed mx-auto font-light animate-fade-up delay-3">
-          I sculpt scalable <strong className="text-white-custom font-medium">full-stack web & mobile experiences</strong>. Currently breaking build steps at MNNIT Allahabad, with a penchant for highly polished user interfaces and robust APIs.
+          I build <strong className="text-white-custom font-medium">functional, high-performance products</strong> for web and mobile. Currently a CS Undergrad at MNNIT Allahabad, I spend most of my time obsession over clean UI patterns and solving the complex bits that happen behind the scenes.
         </p>
 
         {/* Interactive CTA */}
-        <div className="flex flex-wrap justify-center gap-4 mt-10 sm:mt-14 mb-16 sm:mb-20 animate-fade-up delay-4">
-          <Button href="#projects" className="group relative overflow-hidden bg-accent text-[#0b0b0b] font-heading font-bold text-sm sm:text-base tracking-wide px-8 py-4 sm:py-5 rounded-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(198,241,53,0.4)] hover:-translate-y-1">
-            View My Work
-            <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
-          </Button>
+        <div className="flex flex-wrap justify-center gap-6 mt-10 sm:mt-14 mb-16 sm:mb-20 animate-fade-up delay-4">
+          <Magnetic intensity={0.2}>
+            <Button href="#projects" className="group relative overflow-hidden bg-accent text-[#0b0b0b] font-heading font-bold text-sm sm:text-base tracking-wide px-8 py-4 sm:py-5 rounded-xl transition-all duration-300 hover:shadow-[0_0_40px_rgba(198,241,53,0.4)] hover:-translate-y-1">
+              View My Work
+              <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
+            </Button>
+          </Magnetic>
           
-          <Button variant="outline" href="/klk-resume.pdf" download className="group relative overflow-hidden bg-[rgba(255,255,255,0.02)] text-text font-heading font-medium text-sm sm:text-base tracking-wide px-8 py-4 sm:py-5 rounded-xl border border-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.05)] hover:text-white-custom hover:border-[rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
-            Download Resume
-            <span className="inline-block ml-2 opacity-50 group-hover:opacity-100 transition-opacity">↓</span>
-          </Button>
+          <Magnetic intensity={0.2}>
+            <Button variant="outline" href="/klk-resume.pdf" download className="group relative overflow-hidden bg-[rgba(255,255,255,0.02)] text-text font-heading font-medium text-sm sm:text-base tracking-wide px-8 py-4 sm:py-5 rounded-xl border border-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.05)] hover:text-white-custom hover:border-[rgba(255,255,255,0.2)] transition-all duration-300 hover:-translate-y-1 backdrop-blur-md">
+              Download Resume
+              <span className="inline-block ml-2 opacity-50 group-hover:opacity-100 transition-opacity">↓</span>
+            </Button>
+          </Magnetic>
         </div>
 
         {/* Floating Stats */}
