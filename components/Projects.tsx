@@ -50,11 +50,11 @@ export default function Projects({ showAll = false }: ProjectsProps) {
           {!showAll && (
             <motion.div variants={itemVariants}>
               <div className="section-label mb-6">
-                <span className="font-mono text-xs text-accent tracking-widest uppercase">03 // work</span>
+                <span className="font-mono text-xs text-accent tracking-widest uppercase">03 // projects</span>
                 <div className="h-px w-12 bg-accent opacity-50" />
               </div>
               <h2 className="font-heading font-bold text-4xl lg:text-5xl tracking-tight text-white-custom leading-tight">
-                Selected <span className="text-accent italic glow-text tracking-tighter pr-2">Projects.</span>
+                Some of my <span className="text-accent italic glow-text tracking-tighter pr-2">work.</span>
               </h2>
             </motion.div>
           )}

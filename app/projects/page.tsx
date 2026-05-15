@@ -1,12 +1,11 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Projects from "@/components/Projects";
-import Link from "next/link";
 import { Button } from "@/components/Button";
 
 export const metadata = {
-  title: "All Projects — Likith Krishnasai",
-  description: "Browse all projects built by Likith Krishnasai.",
+  title: "Projects - Likith Krishnasai",
+  description: "A collection of projects I have worked on.",
 };
 
 export default function ProjectsPage() {
@@ -20,14 +19,13 @@ export default function ProjectsPage() {
         <div className="pb-12 sm:pb-16 text-center">
           <div className="section-container relative z-10">
             <h1 className="font-heading font-black text-6xl sm:text-7xl mb-8 tracking-tighter text-white-custom">
-              Project <span className="text-[rgba(255,255,255,0.2)]">Archive</span>
+              Projects I have built
             </h1>
             <Button
               href="/"
-              className="group bg-accent text-[#0b0b0b] font-heading font-bold px-8 py-6 rounded-xl hover:-translate-y-1 transition-all shadow-[0_0_20px_rgba(198,241,53,0.3)]"
+              className="group bg-accent text-bg font-heading font-bold px-8 py-6 rounded-xl hover:-translate-y-1 transition-all shadow-[0_0_20px_rgba(198,241,53,0.3)]"
             >
-              <span className="transition-transform group-hover:-translate-x-1 inline-block mr-2">←</span>
-              Return to Home
+              Back home
             </Button>
           </div>
         </div>

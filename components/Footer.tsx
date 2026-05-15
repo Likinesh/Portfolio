@@ -32,7 +32,7 @@ export default function Footer() {
 
           <div className="w-full md:w-auto flex flex-col items-center md:items-end text-center md:text-right">
             <p className="text-muted-custom font-light leading-relaxed max-w-[350px] mb-8">
-              Open to full-time roles starting July 2026. Whether you have a project in mind or just want to say hi, I'm always down to chat.
+              I'm open to full-time opportunities starting July 2026. If you've got a project in mind or just want to connect, feel free to reach out.
             </p>
             
             <button

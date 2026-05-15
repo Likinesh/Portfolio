@@ -1,41 +1,4 @@
-export interface Project {
-  id: number;
-  title: string;
-  subtitle: string;
-  description: string;
-  tech: string[];
-  github?: string;
-  live?: string;
-  image?: string;
-}
-
-export interface Experience {
-  date: string;
-  company: string;
-  location: string;
-  role: string;
-  roleAccent: string;
-  bullets: string[];
-}
-
-export interface SkillGroup {
-  iconName: string;
-  title: string;
-  skills: string[];
-}
-
-export interface Education {
-  year: string;
-  degree: string;
-  school: string;
-  score: string;
-}
-
-export interface Achievement {
-  icon: string;
-  title: string;
-  description: string;
-}
+import { Project, Experience, SkillGroup, Education, Achievement } from "./types";
 
 export const personalInfo = {
   name: "Kommareddy Likith Krishnasai",
@@ -47,13 +10,33 @@ export const personalInfo = {
   githubHandle: "github.com/Likinesh",
   linkedin: "https://www.linkedin.com/in/likithkk",
   leetcode: "https://leetcode.com/Likithkk",
-  leetcodeHandle: "Likithkk · Knight 🏅",
+  leetcodeHandle: "Likithkk - Knight (1863)",
 };
 
 // First 3 projects are shown on the homepage, all are shown on /projects
 export const projects: Project[] = [
+  // ——— HOMEPAGE FEATURED (top 3) ———
   {
     id: 1,
+    title: "InterviewForge",
+    subtitle: "AI Interview Preparation Platform",
+    description:
+      "A full-stack SaaS platform that leverages Google's Gemini AI to help job seekers prepare for interviews. Users upload their resume or write a self-description, paste a job description, and receive a comprehensive strategy including a match score, tailored questions, skill gap analysis, and a day-by-day preparation plan. It also features an AI resume fixer, PDF generator, progress tracking, and a full admin dashboard.",
+    tech: ["React", "Express", "MongoDB", "Gemini API", "Puppeteer", "Playwright"],
+    github: "https://github.com/Likinesh/InterviewForge",
+  },
+  {
+    id: 2,
+    title: "NexAssist",
+    subtitle: "AI Support Agent Platform",
+    description:
+      "Deploy a fully trained AI support agent on any website in minutes. Configure your knowledge base in a dashboard, copy a single script tag, and your AI agent starts handling customer queries automatically around the clock. It requires no coding on your end and integrates seamlessly with zero dependencies, so your pages stay lightweight and fast.",
+    tech: ["Next.js", "TypeScript", "Google Gemini", "MongoDB", "Scalekit", "Tailwind CSS"],
+    github: "https://github.com/Likinesh/AI-customer-support",
+    live: "https://ai-customer-support-seven-alpha.vercel.app",
+  },
+  {
+    id: 3,
     title: "Eventra",
     subtitle: "AI-Powered Event Management",
     description:
@@ -63,48 +46,49 @@ export const projects: Project[] = [
     live: "https://eventra-peach.vercel.app/",
     image: "/eventra.png",
   },
+  // ——— ARCHIVE ———
   {
-    id: 2,
+    id: 4,
     title: "HealNow",
     subtitle: "Tele-Health Platform",
     description:
       "A project born from the need for more accessible healthcare. I developed a full-stack space where patients and doctors can connect via real-time video. Beyond the interface, I spent significant time optimizing the database with Prisma, managing to cut down response times by nearly 35% for a snappier experience.",
     tech: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL", "Vonage API", "Vercel"],
-    github: "https://github.com/Likinesh",
+    github: "https://github.com/Likinesh/HealNow-Next",
     live: "https://heal-now-next.vercel.app",
     image: "/healnow.png",
   },
   {
-    id: 3,
+    id: 5,
     title: "Craft-Vault",
     subtitle: "P2P Marketplace Mobile App",
     description:
       "I wanted to see how far I could push real-time interactions on mobile. Craft-Vault is a React Native app that connects artisans with a global audience. It handles sub-second syncs for over 50 concurrent transactions, proving that even small-scale marketplaces can feel incredibly robust and reactive.",
     tech: ["React Native", "Expo", "Firebase", "Tailwind CSS", "Formik"],
-    github: "https://github.com/Likinesh",
+    github: "https://github.com/Likinesh/Craft-Vault-social-marketplace-",
   },
   {
-    id: 4,
+    id: 6,
     title: "AI CLI",
     subtitle: "AI-Powered Command Line Tool",
     description:
-      "As a developer, I'm always looking for ways to stay in the flow. I built this CLI to bring AI right into the terminal—helping with anything from debugging cryptic errors to automating repetitive boilerplate. It's essentially a local assistant that understands your codebase as you write it.",
+      "As a developer, I'm always looking for ways to stay in the flow. I built this CLI to bring AI right into the terminal helping with anything from debugging cryptic errors to automating repetitive boilerplate. It's essentially a local assistant that understands your codebase as you write it.",
     tech: ["TypeScript", "Node.js", "JavaScript", "CSS"],
     github: "https://github.com/Likinesh/AI_CLI",
   },
   {
-    id: 5,
+    id: 7,
     title: "WebAnalysis",
     subtitle: "Website Analytics Dashboard",
     description:
-      "Privacy-first analytics is something I care about. This dashboard allows for self-hosted tracking of visitor behavior without relying on big-tech trackers. It gives you raw insights—from session duration to device types—presented through clean, interactive visualizations built with Drizzle and Next.js.",
+      "Privacy-first analytics is something I care about. This dashboard allows for self-hosted tracking of visitor behavior without relying on big-tech trackers. It gives you raw insights from session duration to device types presented through clean, interactive visualizations built with Drizzle and Next.js.",
     tech: ["Next.js", "TypeScript", "Drizzle ORM", "Tailwind CSS", "PostgreSQL"],
     github: "https://github.com/Likinesh/WebAnalysis",
   },
   {
-    id: 6,
+    id: 8,
     title: "MyRestro POS",
-    subtitle: "Restaurant Point-of-Sale System",
+    subtitle: "Restaurant Point of Sale System",
     description:
       "What started as a tool for local businesses evolved into a full POS system. I focused on making the order management and billing workflows as intuitive as possible for high-pressure restaurant environments. It teaches the importance of UI simplicity in mission-critical software.",
     tech: ["JavaScript", "Node.js", "Express", "React", "MongoDB"],
@@ -117,7 +101,7 @@ export const experiences: Experience[] = [
     date: "May 2025 – Jul 2025",
     company: "Publicis Sapient",
     location: "Bangalore, IN",
-    role: "Associate Software",
+    role: "Summer Intern",
     roleAccent: "Development Engineer Intern",
     bullets: [
       "I took ownership of a <strong>global telemetry solution</strong>, integrating Azure Application Insights into high-availability systems to provide deeper visibility into operational Health.",
@@ -130,9 +114,8 @@ export const experiences: Experience[] = [
     company: "Green Club · MNNIT",
     location: "Allahabad, IN",
     role: "Web",
-    roleAccent: "Lead & Mentor",
+    roleAccent: "Mentor",
     bullets: [
-      "I led the redesign and development of our <strong>community platform</strong>, focusing on creating an accessible home for our environmental initiatives.",
       "Mentored a cohort of <strong>20+ junior developers</strong>, fostering a culture of peer reviews and clean code through standard Git workflows and open-source contributions.",
     ],
   },

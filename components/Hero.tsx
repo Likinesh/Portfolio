@@ -40,12 +40,12 @@ export default function Hero() {
 
         {/* Mega Typography */}
         <h1 className="font-heading font-bold text-[clamp(3.5rem,10vw,8rem)] leading-[0.9] tracking-tighter text-white-custom mb-6 animate-fade-up delay-2">
-          Likith <br className="md:hidden" />
-          <span className="text-accent glow-text italic pr-2">Krishnasai</span>
+          Kommareddy <br className="md:hidden" />
+          <span className="text-accent glow-text italic pr-2">Likith Krishnasai</span>
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-muted-custom max-w-[600px] leading-relaxed mx-auto font-light animate-fade-up delay-3">
-          I build <strong className="text-white-custom font-medium">functional, high-performance products</strong> for web and mobile. Currently a CS Undergrad at MNNIT Allahabad, I spend most of my time obsession over clean UI patterns and solving the complex bits that happen behind the scenes.
+          I build <strong className="text-white-custom font-medium">fast, reliable products</strong> for web and mobile. As a CS undergrad at MNNIT Allahabad, I'm focused on clean code, thoughtful design, and solving tricky backend problems.
         </p>
 
         {/* Interactive CTA */}
@@ -68,10 +68,10 @@ export default function Hero() {
         {/* Floating Stats */}
         <div className="mt-20 sm:mt-28 grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-[800px] animate-fade-up delay-5">
           {[
-            { label: "CGPA MNNIT", val: "8.68" },
-            { label: "LeetCode", val: "Rating 1863+" },
-            { label: "Products", val: "Shipped 2+" },
-            { label: "Experience", val: "3+ Years" }
+            { label: "CGPA", val: "8.68" },
+            { label: "LeetCode", val: "Rating 1863" },
+            { label: "Projects", val: "8+" },
+            { label: "Years", val: "3+" }
           ].map((stat, i) => (
             <div key={i} className="glass-card p-4 sm:p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-transform hover:-translate-y-2">
               <div className="font-heading font-bold text-xl sm:text-2xl text-accent mb-1">{stat.val}</div>

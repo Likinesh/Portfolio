@@ -40,11 +40,11 @@ export default function Experience() {
             transition={{ duration: 0.6 }}
           >
             <div className="section-label mb-6">
-              <span className="font-mono text-xs text-accent tracking-widest uppercase">02 // execution</span>
+              <span className="font-mono text-xs text-accent tracking-widest uppercase">02 // experience</span>
               <div className="h-px w-12 bg-accent opacity-50" />
             </div>
             <h2 className="font-heading font-bold text-4xl lg:text-5xl tracking-tight text-white-custom leading-tight">
-              Where I've <span className="text-accent italic glow-text tracking-tighter pr-2">impacted.</span><br />
+              Where I've <span className="text-accent italic glow-text tracking-tighter pr-2">worked.</span><br />
             </h2>
           </motion.div>
 
@@ -95,7 +95,7 @@ export default function Experience() {
                       <ul className="space-y-4">
                         {exp.bullets.map((bullet, j) => (
                           <li key={j} className="flex gap-4 items-start text-sm sm:text-base text-muted-custom font-light leading-relaxed">
-                            <span className="text-accent mt-1 opacity-50 text-[0.6rem] shrink-0">▹</span>
+                            <span className="text-accent mt-1 opacity-50 shrink-0">—</span>
                             <span dangerouslySetInnerHTML={{ __html: bullet }} className="[&_strong]:text-white-custom [&_strong]:font-medium" />
                           </li>
                         ))}

@@ -40,11 +40,11 @@ export default function Education() {
             transition={{ duration: 0.6 }}
           >
             <div className="section-label mb-6">
-              <span className="font-mono text-xs text-accent tracking-widest uppercase">04 // learning</span>
+              <span className="font-mono text-xs text-accent tracking-widest uppercase">04 // education</span>
               <div className="h-px w-12 bg-accent opacity-50" />
             </div>
             <h2 className="font-heading font-bold text-4xl lg:text-5xl tracking-tight text-white-custom leading-tight">
-              Where I've <span className="text-accent italic glow-text tracking-tighter pr-2">studied.</span>
+              <span className="text-accent italic glow-text tracking-tighter pr-2">Education</span>
             </h2>
           </motion.div>
 

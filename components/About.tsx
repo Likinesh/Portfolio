@@ -59,14 +59,14 @@ export default function About() {
             variants={itemVariants}
           >
             <h2 className="font-heading font-bold text-2xl sm:text-3xl mb-4 text-white-custom group-hover:text-accent transition-colors">
-              The Architect
+              About Me
             </h2>
             <div className="space-y-4 text-sm sm:text-base text-muted-custom font-light leading-relaxed">
               <p>
-                I'm currently in my final year of Computer Science at <strong className="text-white-custom">MNNIT Allahabad</strong>. My journey into tech started with curiosity about how things work under the hood, and it has evolved into a passion for building software that's as reliable as it is fast.
+                I'm in my final year of Computer Science at <strong className="text-white-custom">MNNIT Allahabad</strong>. I got into tech because I wanted to understand how things actually work, and that curiosity stuck. Now I build software that's reliable, fast, and actually useful.
               </p>
               <p>
-                Recently, I spent my summer at <strong className="text-white-custom">Publicis Sapient</strong>, where I worked on the complex bits of cloud infrastructure—specifically telemetry services and real-time flight tracking systems. Whether it's a mobile app or a web platform, I'm always aiming for that sweet spot where clean code meets a great user experience.
+                This summer, I worked at <strong className="text-white-custom">Publicis Sapient</strong> on cloud infrastructure, telemetry services, and real-time flight tracking systems. Whether I'm working on mobile apps or web platforms, I focus on writing clean code and building interfaces that people actually want to use.
               </p>
             </div>
 

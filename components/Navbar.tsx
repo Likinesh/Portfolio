@@ -66,7 +66,7 @@ export default function Navbar() {
               href="/#hero"
               className="font-heading font-black text-lg sm:text-xl md:text-2xl text-white-custom tracking-tighter hover:text-accent transition-colors"
             >
-              LK<span className="text-accent">.</span>
+              KLK<span className="text-accent">.</span>
             </Link>
             <div className="flex items-center gap-2 sm:gap-6 md:gap-8">
               <Link href="/#about" className="nav-link hidden sm:block">About</Link>
