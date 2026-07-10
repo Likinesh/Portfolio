@@ -4,13 +4,14 @@ import { personalInfo, skillGroups, achievements } from "@/lib/data";
 import { Badge } from "@/components/Badge";
 import { Button } from "@/components/Button";
 import { motion, Variants } from "framer-motion";
-import { Code2, Cpu, Database, Cloud } from "lucide-react";
+import { Code2, Cpu, Database, Cloud, Sparkles } from "lucide-react";
 
 const IconMap: { [key: string]: any } = {
   Code2,
   Cpu,
   Database,
   Cloud,
+  Sparkles,
 };
 
 const containerVariants: Variants = {
